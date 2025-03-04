@@ -1,4 +1,4 @@
-package com.mftplus.model.entity;
+package hospital.app.model.entity;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -6,15 +6,16 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @SuperBuilder
 @NoArgsConstructor
 @ToString
-public class MedicalService {
+public class TimeSheet {
     private int id;
-    private String ServiceName;
-    private TimeSheet timeSheet;
-    private Doctor doctor;
-    private String description;
+    private MedicalService medicalService;
+    private LocalDateTime startTime;
+    private LocalDateTime endTime;
 }

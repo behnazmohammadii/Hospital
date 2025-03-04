@@ -1,11 +1,14 @@
-package com.mftplus.model.entity;
+package hospital.app.model.entity;
 
 
+import hospital.app.model.entity.enums.Gender;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
+
+import java.time.LocalDate;
 
 @Getter
 @Setter
@@ -15,13 +18,10 @@ import lombok.experimental.SuperBuilder;
 
 public class Doctor {
     private int id;
-    private String firstName;
-    private String lastName;
-    private int age;
-    private String gender;
+    private String name;
+    private String family;
+    private Gender gender;
     private String phone;
-    private String address;
+    private LocalDate birthdate;
     private String specialty;
-    private String workingHours;
-
 }

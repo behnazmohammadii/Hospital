@@ -1,12 +1,13 @@
-package com.mftplus.model.entity;
+package hospital.app.model.entity;
 
+import hospital.app.model.entity.enums.PaymentMethod;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.SuperBuilder;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -15,12 +16,8 @@ import java.time.LocalDate;
 @ToString
 public class Payment {
     private int id;
-    private int paymentId;
-    private double amount;
-    private LocalDate paymentDate;
-    private String paymentMethod;
-    private String paymentStatus;
     private Visit visit;
-
-
+    private double amount;
+    private LocalDateTime paymentDateTime;
+    private PaymentMethod paymentMethod;
 }

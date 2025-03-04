@@ -1,4 +1,4 @@
-package com.mftplus.model.entity;
+package hospital.app.model.entity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,11 +10,10 @@ import lombok.experimental.SuperBuilder;
 @SuperBuilder
 @NoArgsConstructor
 @ToString
-public class Visit {
+public class VisitHistory {
     private int id;
-    private String visitName;
-    private Payment payment;
-    private Patient patient;
-    private TimeSheet timeSheet;
-
+    private Visit visit;
+    private String prescription;
+    private String tajviz;
+    private String description;
 }
